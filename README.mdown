@@ -1,0 +1,30 @@
+# README
+
+## Purpose
+
+This is a really simple app for the purpose of demonstarting various rails
+related topics. The team will have regular Webex meetings to cover the topics
+listed so that we can grow together.
+
+Feel free to add topics.  If you do, just submit a merge request.
+
+## Topics to be covered:
+
+* Testing with RSpec -- 02/25/2015
+  * RSpec Basics
+  * Integration Testing with Request specs
+  * Testing for nested attributes
+  * Basics of FactoryGirl
+* Versioning
+* Security
+* Grape API
+* "Universal" Helpers and other rails class/module types
+  * Helpers
+  * Presenters
+  * Consernse
+  * etc.
+* js/json Views
+* params - auto generating/extracting to FactoryGirl
+  * how to
+  * pros and cons
+* FactoryGirl Best Practices and Advanced Concepts
