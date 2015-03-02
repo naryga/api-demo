@@ -28,3 +28,29 @@ Feel free to add topics.  If you do, just submit a merge request.
   * how to
   * pros and cons
 * FactoryGirl Best Practices and Advanced Concepts
+
+## Points of Interest
+
+Some interesting things about what is being done in this project:
+
+1. In the App model spec we are testing for to see it uses
+   `allows_nested_attributes_for` to allow the saving of category information
+   automatically.  This is made possible by a custom matcher provided by the
+   file in `./spec/support/accept_nested_attributes_for.rb`
+2. The "shoulda" gem is used to test for associations and validations
+
+## Excersises
+
+### Post Demo 1
+
+1. In the `apps_controller_spec.rb` we have a pending spec to check that the app
+   returns a 400 response the api fails to add the new app.  How would we write
+   that test, and make it work.
+2. In the last demo we talked about wanting to make an integration test to
+   allow us to check that the categories were added.  The test is there
+   (`spec/request/app_spec.rb`), what is one way we could alter the
+   AppsController#index method to make it pass?
+2. Right now Our categories are a little contrived.  Really we should have a
+   many to many relationship between categories and apps. See if you can make
+   it happen
+
