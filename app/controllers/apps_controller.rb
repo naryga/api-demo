@@ -4,7 +4,7 @@ class AppsController < ApplicationController
   
   def index
     @apps = App.order(:name)
-    render json: { apps: @apps.inject([]){ |result, app| attributes = app.attributes; attributes[:categories] = app.categories; result << attributes } }
+    render json: { apps: @apps }
   end
 
   def show
